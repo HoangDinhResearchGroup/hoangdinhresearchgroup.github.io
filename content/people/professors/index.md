@@ -7,7 +7,7 @@ date: 2023-03-16T23:47:19+11:00
 {{< rawhtml >}}
 <div class="content-container">
 <h2>
- Diep N. Nguyen</h2>
+ Associate Professor Diep N. Nguyen</h2>
 <h4>Founding-Director, Agile Communications and Computing Group</h4>
 <p style="text-align: justify;" class="block"><span style="font-weight: bold;"><img style="border: 1px solid ; width: 240px; height: 348px; float: left; margin-left:0 !important; margin-right: 20px !important;" alt="" src="Diep_Nguyen.jpg" hspace="10">Associate Professor Diep N. Nguyen
 </span>is currently a faculty member of the Faculty of Engineering and Information Technology, University of Technology Sydney (UTS), Australia and holding adjunct positions at other universities in US, Vietnam, Japan. He received M.E. and Ph.D. in Electrical and Computer Engineering from the University of California San Diego (UCSD) and the University of Arizona (UA), respectively.
