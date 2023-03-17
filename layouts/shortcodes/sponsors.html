@@ -1,0 +1,20 @@
+{{- $json_filepath := path.Join "data" (print .Page.Params.sponsors ".json") }}
+{{- if fileExists $json_filepath -}}
+{{- $sponsors := getJSON $json_filepath -}}
+<div class="content-container">
+    <table style="table-layout: auto; border-collapse: collapse; width: 100%;"><tbody>
+      {{ range $sponsors -}}
+      <tr class="even">
+        <td style="white-space: nowrap;">
+          <a href="{{ .Permalink }}"><h5 class="book__title" style="margin: 0">{{ .Name }}</h5> </a>
+        </td>
+        <td align="center">
+            <a href="{{ .Permalink }}"><img src="{{ .Logo | relURL }}" style="max-height: 50px; margin-left: 30px;" align="left"></a>
+        </td>
+      </tr>
+      {{ end -}}
+    </tbody></table>
+</div>
+{{- else -}}
+<span class="has-background-danger has-text-white">ERROR</span>
+{{- end -}}

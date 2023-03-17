@@ -1,0 +1,19 @@
+<!-- List citations by keyword -->
+{{- $json_filepath := path.Join "data" (print .Page.Params.bib ".json") }}
+{{- if fileExists $json_filepath -}}
+{{- $bib := getJSON $json_filepath -}}
+<div class ="box authorbox__description">
+  <ul style="margin-left: 20px !important;">
+  {{ range first 10 (sort  $bib "pub_year" "desc") -}}
+  <li class="content" style="text-align: justify !important; margin-bottom: 10px !important;">
+    {{ .author }},
+    "{{ .title }},"
+    <i> {{ .citation }}. </i>
+    <a href="{{ .url }}" style="color: #006699 !important; font-weight: 700 !important;">[Link]</a>
+  </li>
+  {{- end -}}
+  </ul>
+</div>
+{{- else -}}
+<span class="has-background-danger has-text-white">ERROR</span>
+{{- end -}}

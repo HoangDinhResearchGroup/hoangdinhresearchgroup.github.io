@@ -1,0 +1,23 @@
+<!-- List citations by keyword -->
+{{- $json_filepath := path.Join "data" (print .Page.Params.accomplishments ".json") }}
+{{- $kwd := .Get 0 }}
+{{- if fileExists $json_filepath -}}
+{{- $accomplishments := getJSON $json_filepath -}}
+<div class ="box">
+  <ul style="margin-left: 20px !important; margin-bottom: 10px !important; list-style: disc;">
+  {{ range  $accomplishments -}}
+  {{- if in (lower .keyword) (lower $kwd) -}}
+  <li class="content" style="text-align: justify !important;">
+    <em>{{ .Name }}</em>,
+    {{ .Description }}.
+    {{- if .Link }}
+      <a href="{{ .Link }}">[Link]</a>
+    {{- end }}
+  </li>
+  {{ end -}}
+  {{- end -}}
+  </ul>
+</div>
+{{- else -}}
+<span class="has-background-danger has-text-white">ERROR</span>
+{{- end -}}

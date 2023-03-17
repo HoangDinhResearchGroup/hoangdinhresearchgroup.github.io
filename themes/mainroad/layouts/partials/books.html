@@ -1,0 +1,33 @@
+
+<article class="list__item post">
+  <header class="list__header">
+    <h2 class="list__title post__title">
+      Books
+    </h2>
+  </header>
+  <div class="content-container">
+    <table class="books borderless"><tbody>
+      {{- $json_filepath := path.Join "data" (print .Site.Params.books ".json") }}
+      {{- if fileExists $json_filepath -}}
+      {{- $books := getJSON $json_filepath -}}
+      {{ range $books -}}
+      <tr class="even">
+        <td>
+          <a href="{{ .Permalink }}"><img src="{{ .Cover | relURL }}" width="201" height="301" align="left"></a>
+        </td>
+        <td valign="top" style="padding-top: 40px !important;">
+          <a href="{{ .Permalink }}"><h5 class="book__title">{{ .Title }}</h5> </a>
+                <p style="margin-bottom: 5px !important;">{{ .Authors }}</p>
+                <em>{{ .Publisher }}</em>,
+                
+                {{ .Date }}
+                <!-- <em><a href="{{ .Permalink }}">[Link]</a></em> -->
+        </td>
+      </tr>
+      {{ end -}}
+      {{- else -}}
+      <span class="has-background-danger has-text-white">ERROR</span>
+      {{- end -}}
+    </tbody></table>
+  </div>
+</article>

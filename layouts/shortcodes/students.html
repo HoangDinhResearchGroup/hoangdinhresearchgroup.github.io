@@ -1,0 +1,21 @@
+<!-- List citations by keyword -->
+{{- $json_filepath := path.Join "data" (print .Page.Params.students ".json") }}
+{{- $kwd := .Get 0 }}
+{{- if fileExists $json_filepath -}}
+{{- $students := getJSON $json_filepath -}}
+<div class ="box">
+  {{ range $students -}}
+  <div class="content-container" style="min-height: 175px; margin-bottom: 10px; background-color: #F0F0F0; padding: 10px;">
+    <p style="text-align: justify; margin-bottom: 10px;" class="block"><span style="font-weight: bold;"><img style="border: 1px solid ; width: 120px; height: 155px; object-fit: cover; float: left; margin-left:0 !important; margin-right: 20px !important;" alt="" src="{{ .photo }}" hspace="10">{{.name}}
+    </span>{{.short_bio}}
+    </p>
+    {{- if .gg_scholar }}
+    <a href="{{.gg_scholar}}">Google Scholar</a>
+    {{- end }}
+    </div>
+    <!-- <hr/ style="margin-bottom: 10px;"> -->
+  {{ end -}}
+</div>
+{{- else -}}
+<span class="has-background-danger has-text-white">ERROR</span>
+{{- end -}}

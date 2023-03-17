@@ -1,0 +1,36 @@
+{{- $recent := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
+{{- $recent_num := (.Site.Params.widgets.recent_num | default 10) }}
+
+{{- if $recent }}
+<div class="widget-recent widget">
+	<h4 class="widget__title">News</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			{{- $json_filepath := path.Join "data" (print .Site.Params.news ".json") }}
+			{{- if fileExists $json_filepath -}}
+			{{- $news := getJSON $json_filepath -}}
+			<div class ="box">
+			{{ range $news -}}
+			<li class="d-flex mb-3 pr-3">
+	            <!-- <a href="{{ .Permalink }}" class="my-auto" style="max-width: 5rem; margin-right: 10px">
+	              <img src="{{ .Thumbnail }}">
+	            </a> -->
+	            <div class="post-body p-0">
+	              <a href="{{ .Permalink }}">
+				<strong>{{ .Title }}</strong>
+				  </br>
+					<span class="text-capitalize"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="10" fill="currentColor" class="bi bi-calendar mr-1" viewBox="0 0 16 16">
+						<path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+					  </svg><small>{{ dateFormat "01 Jan 2006" .Date }}</small></span>
+	              </a>
+	            </div>
+			</li>
+			{{ end -}}
+			</div>
+			{{- else -}}
+			<span class="has-background-danger has-text-white">ERROR</span>
+			{{- end -}}
+		</ul>
+	</div>
+</div>
+{{- end }}

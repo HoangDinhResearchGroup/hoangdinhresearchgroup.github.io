@@ -1,0 +1,22 @@
+<!-- List citations by keyword -->
+{{- $json_filepath := path.Join "data" (print .Page.Params.bib ".json") }}
+{{- $kwd := .Get 0 }}
+{{- if fileExists $json_filepath -}}
+{{- $bib := getJSON $json_filepath -}}
+<div class ="box">
+  <ul style="margin-left: 20px !important; margin-bottom: 10px !important; list-style: disc;">
+  {{ range sort  $bib "pub_year" "desc" -}}
+  {{- if in (lower .keyword) (lower $kwd) -}}
+  <li class="content" style="text-align: justify !important;">
+    {{ .author }},
+    "{{ .title }},"
+    <i> {{ .citation }}. </i>
+    <a href="{{ .url }}">[Link]</a>
+  </li>
+  {{ end -}}
+  {{- end -}}
+  </ul>
+</div>
+{{- else -}}
+<span class="has-background-danger has-text-white">ERROR</span>
+{{- end -}}

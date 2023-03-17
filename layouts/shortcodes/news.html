@@ -1,0 +1,15 @@
+<!-- List citations by keyword -->
+{{- $json_filepath := path.Join "data" (print .Page.Params.news ".json") }}
+{{- $kwd := .Get 0 }}
+{{- if fileExists $json_filepath -}}
+{{- $news := getJSON $json_filepath -}}
+<div class ="box">
+  {{ range $news -}}
+  <li><a href="{{ .thumbnail | relURL  }}">
+    {{ .title }}
+  </li>>
+  {{ end -}}
+</div>
+{{- else -}}
+<span class="has-background-danger has-text-white">ERROR</span>
+{{- end -}}

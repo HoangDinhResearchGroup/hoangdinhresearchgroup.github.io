@@ -1,0 +1,95 @@
+[
+	{
+		"name": "Md Arif Hassan",
+		"short_bio": "(Jul. 2022 – now)",
+		"photo": "/Arif.jpg",
+		"email": "",
+		"gg_scholar": "https://scholar.google.com/citations?user=zieGZk0AAAAJ&hl=en&oi=ao",
+		"personal_web": ""
+	},
+	{
+		"name": "Hieu C. Nguyen",
+		"short_bio": "(Apr. 2022 – now)",
+		"photo": "/Beta.jpg",
+		"gg_scholar": "",
+		 "personal_web": ""
+	},
+	{
+		"name": "Mshari Aljumaie",
+		"short_bio": "(Jan. 2022 – now)",
+		"photo": "/Mshari.jpeg",
+		"gg_scholar": "",
+		 "personal_web": ""
+	},
+	{
+		"name": "Hieu Q. Nguyen",
+		"short_bio": "(Nov. 2021 – now) received the B.Eng. degree from the Hanoi University of Science and Technology, Vietnam, in 2018. He is currently pursuing the Ph.D. degree with the University of Technology Sydney, Australia. He worked as a Research Assistant with Nanyang Technological University, Singapore, from 2019 to 2021. His research interests include wireless communications, network optimization, stochastic optimization, reinforcement learning, and deep learning.",
+		"photo": "/Alpha.png",
+		"gg_scholar": "https://scholar.google.com/citations?hl=en&user=AA4yCv4AAAAJ",
+		"personal_web": ""
+	},
+
+	{
+		"name": "Khoa V. Tran",
+		"short_bio": "(Jun. 2019 – now) received the B.Sc. degree in electronics and telecommunications from the University of Engineering and Technology (UET), Vietnam National University (VNU), in 2008, and the M.Sc. degree from Paris-Sud 11, France, in 2010. He is currently pursuing the Ph.D. degree with the Joint Technology and Innovation Research Center between VNU and the University of Technology Sydney (UTS). He was a Network Engineer at Viettel Network Corporation, from 2012 to 2018. His research interests include the IoT, deep learning, and cyberattack detection.",
+		"photo": "/Khoa.jpg",
+		"gg_scholar": "https://scholar.google.com/citations?hl=en&user=Lf0hrtcAAAAJ",
+		"personal_web": ""
+	},
+	{
+		"name": "Cong T. Nguyen",
+		"short_bio": "(Jul. 2019 – now) received the B.E. degree in electrical engineering and information from the Frankfurt University of Applied Sciences, in 2014, and the M.Sc. degree in global production engineering and management from the Technical University of Berlin, in 2016. He is currently pursuing the Ph.D. degree with the UTS-HCMUT Joint Technology and Innovation Research Centre between the Ho Chi Minh City University of Technology and the University of Technology Sydney (UTS). His research interests include operations research, blockchain technology, game theory, and optimizations.",
+		"photo": "/Cong.JPEG",
+		"gg_scholar": "https://scholar.google.com/citations?hl=en&user=pBL5NQ4AAAAJ",
+		"personal_web": ""
+	},
+	{
+		"name": "Nam H. Chu",
+		"short_bio": "(Mar. 2020 – now) received the B.E. degree in electronics and telecommunications engineering from the Hanoi University of Science and Technology, Hanoi, Vietnam, in 2009, and the master’s degree in software engineering from the University of Canberra, Canberra, ACT, Australia, in 2014. He is currently working toward the Ph.D. degree at the University of Technology Sydney, Sydney, NSW, Australia. His research interests include applying machine learning and optimization methods for wireless communication networks.",
+		"photo": "/Nam.png",
+		"gg_scholar": "https://scholar.google.com.au/citations?hl=en&user=L9icwioAAAAJ",
+		 "personal_web": ""
+	},
+	{
+		"name": "Monir Abughalwa",
+		"short_bio": "(Mar. 2021 – now)",
+		"photo": "",
+		"gg_scholar": "",
+		 "personal_web": ""
+	},
+	{
+		"name": "Tuan M. Bui",
+		"short_bio": "(Jun. 2019 – now) received the B.Sc. and M.Sc. degrees from Le Quy Don Technical University, Hanoi, Vietnam, in 2008 and 2013, respectively. He is currently pursuing the Ph.D. degree with the VNU-UTS Joint Technology and Innovation Research Center between Vietnam National University and the University of Technology Sydney. He was a Researcher at The Military Institute of Science and Technology. His major is electronics and communications. His research interests include the IoT, physical layer security, and computer vision.",
+		"photo": "/Tuan.png",
+		"gg_scholar": "",
+		 "personal_web": ""
+	},
+	{
+		"name": "Hai Minh Nguyen",
+		"short_bio": "(Sep. 2018 – now)",
+		"photo": "",
+		"gg_scholar": "",
+		 "personal_web": ""
+	},
+	{
+		"name": "Ly Vu",
+		"short_bio": "(2022 – now) received the M.S. degree from Inha University, Incheon, South Korea, in 2014. She is currently pursuing the Ph.D. dual degree in engineering and information technology with Le Quy Don Technical University, Hanoi, Vietnam, and the University of Technology Sydney, Ultimo, NSW, Australia. Her research interests include data mining, machine learning, deep learning, and network security.",
+		"photo": "/Ly.gif",
+		"gg_scholar": "https://scholar.google.com/citations?hl=en&user=0ddGEfUAAAAJ",
+		 "personal_web": ""
+	},
+	{
+		"name": "Phai Vu",
+		"short_bio": "(2022 – now) received the Master’s degree in information systems from the Le Quy Don Technical University (LQDU), Hanoi, Vietnam, in 2016. He is currently a researcher with the Department for Information Security, LQDU. Since 2013, he has been involved in various research projects and teaching at LQDU. His research interests include network security, wireless security and machine learning.",
+		"photo": "",
+		"gg_scholar": "https://scholar.google.com.vn/citations?hl=vi&user=VvxaCqUAAAAJ&view_op=list_works&sortby=pubdate",
+		 "personal_web": ""
+	},
+	{
+		"name": "Hanh Ngoc Dang",
+		"short_bio": "(2019 – now) received the B.E. and M.E. degrees in electronics and telecommunications engineering from Ho Chi Minh City University of Technology, Ho Chi Minh, Vietnam, in 2007 and 2010, respectively, and the M.E. degree in micro and nano systems technology from Vestfold University College, Horten, Norway, in 2012. She is currently pursuing the Ph.D. degree with the University of Technology Sydney, Sydney, NSW, Australia.,She is currently a Lecturer with Ho Chi Minh City University of Technology. Her research interests include UAV-assisted wireless communications, wireless-powered communications, and optimization problems for wireless communication networks.",
+		"photo": "/Hanh.gif",
+		"gg_scholar": "",
+		 "personal_web": ""
+	}
+]
