@@ -5,7 +5,7 @@
 	</button>
 	<ul class="menu__list">
 		<li class="menu__item{{ if .IsHome }} menu__item--active{{ end }}">
-			<a class="menu__link" href="/">
+			<a class="menu__link" href="{{ .Site.BaseURL }}">
 				<span class="menu__text">Home</span>
 			</a>
 		</li>

@@ -6,9 +6,10 @@ date: 2023-03-16T23:47:19+11:00
 
 {{< rawhtml >}}
 <div class="content-container">
-<h2>Associate Professor Diep N. Nguyen</h2>
+<h2>
+ Diep N. Nguyen</h2>
 <h4>Founding-Director, Agile Communications and Computing Group</h4>
-<p style="text-align: justify;" class="block"><span style="font-weight: bold;"><img style="border: 1px solid ; width: 240px; height: 348px; float: left; margin-left:0 !important; margin-right: 20px !important;" alt="" src="/Diep_Nguyen.jpg" hspace="10">Associate Professor Diep N. Nguyen
+<p style="text-align: justify;" class="block"><span style="font-weight: bold;"><img style="border: 1px solid ; width: 240px; height: 348px; float: left; margin-left:0 !important; margin-right: 20px !important;" alt="" src="Diep_Nguyen.jpg" hspace="10">Associate Professor Diep N. Nguyen
 </span>is currently a faculty member of the Faculty of Engineering and Information Technology, University of Technology Sydney (UTS), Australia and holding adjunct positions at other universities in US, Vietnam, Japan. He received M.E. and Ph.D. in Electrical and Computer Engineering from the University of California San Diego (UCSD) and the University of Arizona (UA), respectively.
 </p>
 <p style="text-align: justify;" class="block">
@@ -31,7 +32,7 @@ More information about professor Diep N. Nguyen
 <div class="content-container">
 <h2>Dr. Hoang Dinh</h2>
 <h4>Senior Lecturer</h4>
-<p style="text-align: justify;" class="block"><span style="font-weight: bold;"><img style="border: 1px solid ; width: 240px; float: left; margin-left:0 !important; margin-right: 20px !important;" alt="" src="/Hoang_Dinh.jpg" hspace="10">Dr. Hoang Dinh
+<p style="text-align: justify;" class="block"><span style="font-weight: bold;"><img style="border: 1px solid ; width: 240px; float: left; margin-left:0 !important; margin-right: 20px !important;" alt="" src="Hoang_Dinh.jpg" hspace="10">Dr. Hoang Dinh
 </span>received his Ph.D. degree in the School of Computer Science and Engineering, Nanyang Technological University, Singapore, in 2016. He is currently a faculty member at the University of Technology Sydney (UTS), Australia. Over the last ten years, he has significantly contributed to advanced wireless communications and networking systems. His excellent record evidence this with one patent filed by Apple Inc., three books, eight book chapters, nearly 80 IEEE Q1 journals, and more than 60 flagship IEEE conference papers in communications and networking. Most of his journal papers have been published in top IEEE journals, including IEEE JSAC, IEEE TWC, IEEE COMST, and IEEE TMC. Furthermore, his research papers have had a high impact, evidenced by more than 11,000 citations (according to Google Scholar) over the last ten years. Since joining UTS in 2018, he has received more than AUD 3 million in external funding and several precious awards, including the Australian Research Council Discovery Early Career Researcher Award for his project “Intelligent Backscatter Communications for Green and Secure IoT Networks” and IEEE TCSC Award for Excellence in Scalable Computing for Contributions on “Intelligent Mobile Edge Computing Systems” (Early Career Researcher). Alternatively, he is the lead author of two authored books, “Ambient Backscatter Communication Networks,” published by Cambridge Publisher in 2020 and “Deep Reinforcement Learning for Wireless Communications and Networking,” published by IEEE-Wiley Publisher in 2022. He is currently an Associate Editor of IEEE Communications Surveys & Tutorials and an Editor of IEEE Transactions on Wireless Communications, IEEE Transactions on Vehicular Technology, and IEEE Transactions on Cognitive Communications and Networking. He also served as a guest editor for several special issues, such as “Deep Reinforcement Learning on Future Wireless Communication Networks” by IEEE TCCN and “Internet of Things for Smart Ocean” by IEEE IoT Journal.
 </p>
 <p style="text-align: justify;" class="block"><span style="font-weight: bold;">
