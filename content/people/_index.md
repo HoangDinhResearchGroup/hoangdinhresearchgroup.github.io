@@ -7,7 +7,7 @@ menu:
     weight: 2
 layout: single
 sidebar: true
-thumbnail: "/people2.JPEG"
+thumbnail: "people2.JPEG"
 ---
 
 {{< rawhtml >}}
