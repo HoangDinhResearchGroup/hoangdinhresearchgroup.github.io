@@ -2,7 +2,7 @@
 {{- $csv_filepath := path.Join "csv" (print .Page.Params.bib ".csv") }}
 {{- if fileExists $csv_filepath -}}
 {{- $bib := getCSV "," $csv_filepath -}}
-{{- $bib = first 10 (after 1 $bib) -}}
+{{- $bib = last 10 (after 1 $bib) -}}
 {{- $num := len $bib -}}
 {{- $idx := seq (sub $num 1) -1 0 -}}
 <!-- {{ $date := slice }}
