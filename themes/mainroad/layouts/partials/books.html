@@ -7,22 +7,24 @@
   </header>
   <div class="content-container">
     <table class="books borderless"><tbody>
-      {{- $csv_filepath := path.Join "data" (print .Site.Params.books ".csv") }}
+      {{- $csv_filepath := path.Join "csv" (print .Site.Params.books ".csv") }}
       {{- if fileExists $csv_filepath -}}
-      {{ range after 1 $i, $r := getCSV "," $csv_filepath -}}
-      <tr class="even">
-        <td>
-          <a href="{{ index $r 0 }}"><img src="{{ index $r 4 | relURL }}" width="201" height="301" align="left"></a>
-        </td>
-        <td valign="top" style="padding-top: 40px !important;">
-          <a href="{{ index $r 0 }}"><h5 class="book__title">{{ index $r 0 }}</h5> </a>
-                <p style="margin-bottom: 5px !important;">{{ index $r 2 }}</p>
-                <em>{{ index $r 3 }}</em>,
-                
-                {{ index $r 5 }}
-                <!-- <em><a href="{{ index $r 0 }}">[Link]</a></em> -->
-        </td>
-      </tr>
+      {{ range $i, $r := getCSV "," $csv_filepath -}}
+        {{ if ne $i 0 }}
+          <tr class="even">
+            <td>
+              <a href="{{ index $r 0 }}"><img src="{{ index $r 4 | relURL }}" width="201" height="301" align="left"></a>
+            </td>
+            <td valign="top" style="padding-top: 40px !important;">
+              <a href="{{ index $r 0 }}"><h5 class="book__title">{{ index $r 0 }}</h5> </a>
+                    <p style="margin-bottom: 5px !important;">{{ index $r 2 }}</p>
+                    <em>{{ index $r 3 }}</em>,
+                    
+                    {{ index $r 5 }}
+                    <!-- <em><a href="{{ index $r 0 }}">[Link]</a></em> -->
+            </td>
+          </tr>
+        {{ end }}
       {{ end -}}
       {{- else -}}
       <span class="has-background-danger has-text-white">ERROR</span>
