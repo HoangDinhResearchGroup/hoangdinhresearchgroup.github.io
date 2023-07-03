@@ -18,7 +18,7 @@
     {{ index (index $bib $i) 3 }},
     "{{ index (index $bib $i) 0 }},"
     <i> {{ index (index $bib $i) 2 }}. </i>
-    <a href="{{ .url }}" style="color: #006699 !important; font-weight: 700 !important;">[Link]</a>
+    <a href="{{ index (index $bib $i) 7 }}" style="color: #006699 !important; font-weight: 700 !important;">[Link]</a>
   </li>
   {{- end -}}
   </ul>
