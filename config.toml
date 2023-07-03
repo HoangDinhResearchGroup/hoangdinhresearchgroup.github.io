@@ -1,4 +1,4 @@
-baseURL = 'https://hieunch.github.io/lab-website/'
+baseURL = 'https://hoangdinhresearchgroup.github.io'
 languageCode = 'en-us'
 title = 'Agile Communications and Computing'
 theme = ['mainroad', "hugo-shortcode-gallery"]
