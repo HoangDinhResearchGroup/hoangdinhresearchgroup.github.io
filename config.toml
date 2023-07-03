@@ -1,6 +1,6 @@
 baseURL = 'https://hoangdinhresearchgroup.github.io'
 languageCode = 'en-us'
-title = 'Agile Communications and Computing'
+title = 'Hoang Dinh Research Group'
 theme = ['mainroad', "hugo-shortcode-gallery"]
 
 [Params.logo]
