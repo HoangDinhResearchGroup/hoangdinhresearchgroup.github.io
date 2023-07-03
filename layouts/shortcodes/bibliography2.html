@@ -1,19 +1,25 @@
 <!-- List citations by keyword -->
-{{- $json_filepath := path.Join "data" (print .Page.Params.bib ".json") }}
+{{- $csv_filepath := path.Join "csv" (print .Page.Params.bib ".csv") }}
 {{- $kwd := .Get 0 }}
-{{- if fileExists $json_filepath -}}
-{{- $bib := getJSON $json_filepath -}}
+{{- if fileExists $csv_filepath -}}
+{{- $bib := getCSV "," $csv_filepath -}}
+{{- $bib = after 1 $bib -}}
+{{- $num := len $bib -}}
+{{- $idx := seq (sub $num 1) -1 0 -}}
+<!-- {{ $date := slice }}
+{{ $count := 0 }} -->
 <div class ="box">
   <ul style="margin-left: 20px !important; margin-bottom: 10px !important; list-style: disc;">
-  {{ range sort  $bib "pub_year" "desc" -}}
-  {{- if in (lower .keyword) (lower $kwd) -}}
+  <!-- {{ range $r, $bib -}}
+    {{ $date = $date | append (dict (print $count) (index $r 1)) }}
+  {{- end -}} -->
+  {{ range $i, $idx -}}
   <li class="content" style="text-align: justify !important;">
-    {{ .author }},
-    "{{ .title }},"
-    <i> {{ .citation }}. </i>
-    <a href="{{ .url }}">[Link]</a>
+    <!-- {{ $date }}, -->
+    "{{ index (index $bib $i) 0 }},"
+    <i> {{ index (index $bib $i) 2 }}. </i>
+    <a href="{{ index (index $bib $i) 7 }}">[Link]</a>
   </li>
-  {{ end -}}
   {{- end -}}
   </ul>
 </div>
