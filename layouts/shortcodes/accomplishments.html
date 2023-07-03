@@ -1,19 +1,20 @@
 <!-- List citations by keyword -->
-{{- $json_filepath := path.Join "data" (print .Page.Params.accomplishments ".json") }}
+{{- $csv_filepath := path.Join "csv" (print .Page.Params.accomplishments ".csv") }}
 {{- $kwd := .Get 0 }}
-{{- if fileExists $json_filepath -}}
-{{- $accomplishments := getJSON $json_filepath -}}
+{{- if fileExists $csv_filepath -}}
 <div class ="box">
   <ul style="margin-left: 20px !important; margin-bottom: 10px !important; list-style: disc;">
-  {{ range  $accomplishments -}}
+  {{ range  $i, $r = getCSV "," $csv_filepath -}}
+  {{ if ne $i 0 }}
   {{- if in (lower .keyword) (lower $kwd) -}}
   <li class="content" style="text-align: justify !important;">
-    <em>{{ .Name }}</em>,
-    {{ .Description }}.
-    {{- if .Link }}
-      <a href="{{ .Link }}">[Link]</a>
+    <em>{{ index $r 0 }}</em>,
+    {{ index $r 1 }}.
+    {{- if index $r 2 }}
+      <a href="{{ index $r 2 }}">[Link]</a>
     {{- end }}
   </li>
+  {{ end }}
   {{ end -}}
   {{- end -}}
   </ul>

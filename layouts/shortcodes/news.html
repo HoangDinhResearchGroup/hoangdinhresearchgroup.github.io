@@ -1,13 +1,14 @@
 <!-- List citations by keyword -->
-{{- $json_filepath := path.Join "data" (print .Page.Params.news ".json") }}
+{{- $csv_filepath := path.Join "csv" (print .Page.Params.news ".csv") }}
 {{- $kwd := .Get 0 }}
-{{- if fileExists $json_filepath -}}
-{{- $news := getJSON $json_filepath -}}
+{{- if fileExists $csv_filepath -}}
 <div class ="box">
-  {{ range $news -}}
-  <li><a href="{{ .thumbnail | relURL  }}">
-    {{ .title }}
+  {{ range $i, $r := getCSV "," $csv_filepath -}}
+  {{ if ne $i 0 }}
+  <li><a href="{{ index $r 2 | relURL  }}">
+    {{ index $r 0 }}
   </li>>
+  {{ end }}
   {{ end -}}
 </div>
 {{- else -}}
