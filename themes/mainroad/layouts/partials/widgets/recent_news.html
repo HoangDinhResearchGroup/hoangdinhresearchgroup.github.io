@@ -12,8 +12,8 @@
 			{{ range $i, $r := getCSV "," $csv_filepath -}}
 			{{ if ne $i 0 }}
 			<li class="d-flex mb-3 pr-3">
-				<!-- <a href="{{ .Permalink }}" class="my-auto" style="max-width: 5rem; margin-right: 10px">
-	              <img src="{{ .Thumbnail }}">
+				<!-- <a href="{{ index $r 1 }}" class="my-auto" style="max-width: 5rem; margin-right: 10px">
+	              <img src="{{ index $r 2 }}">
 	            </a> -->
 	            <div class="post-body p-0">
 	              <a href="{{ index $r 1 }}">
