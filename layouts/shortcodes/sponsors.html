@@ -1,4 +1,4 @@
-{{- $csv_filepath := path.Join "data" (print .Page.Params.sponsors ".csv") }}
+{{- $csv_filepath := path.Join "csv" (print .Page.Params.sponsors ".csv") }}
 {{- if fileExists $csv_filepath -}}
 <div class="content-container">
     <table style="table-layout: auto; border-collapse: collapse; width: 100%;"><tbody>
