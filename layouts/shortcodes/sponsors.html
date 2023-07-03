@@ -1,17 +1,18 @@
-{{- $json_filepath := path.Join "data" (print .Page.Params.sponsors ".json") }}
-{{- if fileExists $json_filepath -}}
-{{- $sponsors := getJSON $json_filepath -}}
+{{- $csv_filepath := path.Join "data" (print .Page.Params.sponsors ".csv") }}
+{{- if fileExists $csv_filepath -}}
 <div class="content-container">
     <table style="table-layout: auto; border-collapse: collapse; width: 100%;"><tbody>
-      {{ range $sponsors -}}
+      {{ range $i, $r := getCSV "," $csv_filepath -}}
+      {{ if ne $i 0 }}
       <tr class="even">
         <td style="white-space: nowrap;">
-          <a href="{{ .Permalink }}"><h5 class="book__title" style="margin: 0">{{ .Name }}</h5> </a>
+          <a href="{{ index $r 2 }}"><h5 class="book__title" style="margin: 0">{{ index $r 0 }}</h5> </a>
         </td>
         <td align="center">
-            <a href="{{ .Permalink }}"><img src="{{ .Logo | relURL }}" style="max-height: 50px; margin-left: 30px;" align="left"></a>
+            <a href="{{ index $r 2 }}"><img src="{{ index $r 1 | relURL }}" style="max-height: 50px; margin-left: 30px;" align="left"></a>
         </td>
       </tr>
+      {{ end }}
       {{ end -}}
     </tbody></table>
 </div>

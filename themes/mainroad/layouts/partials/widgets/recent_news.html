@@ -10,6 +10,7 @@
 			{{- if fileExists $csv_filepath -}}
 			<div class ="box">
 			{{ range $i, $r := getCSV "," $csv_filepath -}}
+			{{ if ne $i 0 }}
 			<li class="d-flex mb-3 pr-3">
 				<!-- <a href="{{ .Permalink }}" class="my-auto" style="max-width: 5rem; margin-right: 10px">
 	              <img src="{{ .Thumbnail }}">
@@ -24,6 +25,7 @@
 	              </a>
 	            </div>
 			</li>
+			{{ end }}
 			{{ end -}}
 			</div>
 			{{- else -}}
