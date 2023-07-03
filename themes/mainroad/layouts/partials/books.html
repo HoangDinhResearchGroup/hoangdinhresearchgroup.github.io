@@ -7,21 +7,20 @@
   </header>
   <div class="content-container">
     <table class="books borderless"><tbody>
-      {{- $json_filepath := path.Join "data" (print .Site.Params.books ".json") }}
-      {{- if fileExists $json_filepath -}}
-      {{- $books := getJSON $json_filepath -}}
-      {{ range $books -}}
+      {{- $csv_filepath := path.Join "data" (print .Site.Params.books ".csv") }}
+      {{- if fileExists $csv_filepath -}}
+      {{ range after 1 $i, $r := getCSV "," $csv_filepath -}}
       <tr class="even">
         <td>
-          <a href="{{ .Permalink }}"><img src="{{ .Cover | relURL }}" width="201" height="301" align="left"></a>
+          <a href="{{ index $r 0 }}"><img src="{{ index $r 4 | relURL }}" width="201" height="301" align="left"></a>
         </td>
         <td valign="top" style="padding-top: 40px !important;">
-          <a href="{{ .Permalink }}"><h5 class="book__title">{{ .Title }}</h5> </a>
-                <p style="margin-bottom: 5px !important;">{{ .Authors }}</p>
-                <em>{{ .Publisher }}</em>,
+          <a href="{{ index $r 0 }}"><h5 class="book__title">{{ index $r 0 }}</h5> </a>
+                <p style="margin-bottom: 5px !important;">{{ index $r 2 }}</p>
+                <em>{{ index $r 3 }}</em>,
                 
-                {{ .Date }}
-                <!-- <em><a href="{{ .Permalink }}">[Link]</a></em> -->
+                {{ index $r 5 }}
+                <!-- <em><a href="{{ index $r 0 }}">[Link]</a></em> -->
         </td>
       </tr>
       {{ end -}}
