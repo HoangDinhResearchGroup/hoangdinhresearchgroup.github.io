@@ -1,0 +1,1 @@
+Agile Communications and Computing Group is in School of Electrical and Data Engineering at the University of Technology Sydney and is led by Associate Professor Diep N. Nguyen.

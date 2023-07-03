@@ -19,10 +19,10 @@
 <article class="list__item post">
 <header class="list__header">
   <h2 class="list__title post__title">
-    Welcome to ACC Lab
+    Welcome to {{ .context.Site.Title }}
   </h2>
 </header>
 <div class="content list__excerpt post__content clearfix">
-  <p style="text-align:justify">Agile Communications and Computing Group is in School of Electrical and Data Engineering at the University of Technology Sydney and is led by Associate Professor Diep N. Nguyen.</p>
+  <p style="text-align:justify">{{ os.ReadFile "INTRO.md" }}</p>
 </div>
 </article>
