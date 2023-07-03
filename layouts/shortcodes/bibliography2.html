@@ -16,6 +16,7 @@
   {{ range $i, $idx -}}
   <li class="content" style="text-align: justify !important;">
     <!-- {{ $date }}, -->
+    {{ index (index $bib $i) 3 }},
     "{{ index (index $bib $i) 0 }},"
     <i> {{ index (index $bib $i) 2 }}. </i>
     <a href="{{ index (index $bib $i) 7 }}">[Link]</a>
