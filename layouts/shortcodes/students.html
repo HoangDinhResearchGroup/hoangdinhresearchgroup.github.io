@@ -10,7 +10,7 @@
     <p style="text-align: justify; margin-bottom: 10px;" class="block"><span style="font-weight: bold;"><img style="border: 1px solid ; width: 120px; height: 155px; object-fit: cover; float: left; margin-left:0 !important; margin-right: 20px !important;" alt="" src="{{ $baseURL }}{{ index $r 2 }}" hspace="10">{{index $r 0}}
     </span>{{ index $r 1 }}
     </p>
-    {{- if .gg_scholar }}
+    {{- if index $r 4 }}
     <a href="{{ index $r 4 }}">Google Scholar</a>
     {{- end }}
     </div>

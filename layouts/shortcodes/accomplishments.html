@@ -4,9 +4,9 @@
 {{- if fileExists $csv_filepath -}}
 <div class ="box">
   <ul style="margin-left: 20px !important; margin-bottom: 10px !important; list-style: disc;">
-  {{ range  $i, $r = getCSV "," $csv_filepath -}}
+  {{ range  $i, $r := getCSV "," $csv_filepath -}}
   {{ if ne $i 0 }}
-  {{- if in (lower .keyword) (lower $kwd) -}}
+  {{- if in (lower (index $r 3)) (lower $kwd) -}}
   <li class="content" style="text-align: justify !important;">
     <em>{{ index $r 0 }}</em>,
     {{ index $r 1 }}.
