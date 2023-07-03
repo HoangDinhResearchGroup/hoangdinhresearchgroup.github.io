@@ -1,5 +1,5 @@
 <!-- List citations by keyword -->
-{{- $csv_filepath := path.Join "data" (print .Page.Params.bib ".csv") }}
+{{- $csv_filepath := path.Join "csv" (print .Page.Params.bib ".csv") }}
 {{- if fileExists $csv_filepath -}}
 {{- $bib := getCSV "," $csv_filepath -}}
 {{- $bib = first 10 (after 1 $bib) -}}
