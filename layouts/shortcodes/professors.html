@@ -1,0 +1,35 @@
+<!-- List citations by keyword -->
+{{- $csv_filepath := path.Join "csv" ("professors.csv") }}
+{{- $kwd := .Get 0 }}
+{{- if fileExists $csv_filepath -}}
+{{- $baseURL := .Site.BaseURL -}}
+<div class="content-container">
+  {{ range $i, $r := getCSV "," $csv_filepath -}}
+  {{ if ne $i 0 }}
+  {{ $para := split (index $r 3) "\n"}}
+  <h2>{{ index $r 0 }}</h2>
+  <h4>{{ index $r 2 }}</h4>
+  <p style="text-align: justify;" class="block"><span style="font-weight: bold;"><img style="border: 1px solid ; width: 240px; float: left; margin-left:0 !important; margin-right: 20px !important;" alt="" src={{ index $r 1 }} hspace="10">{{ index $r 0 }}
+  </span>{{ index $para 0 }}
+  </p>
+  {{ range after 1 $para }}
+  <p style="text-align: justify;" class="block">{{ . }}</p>
+  {{ end }}
+  <p style="text-align: justify;" class="block"><span style="font-weight: bold;">
+  More information about {{ index $r 0 }}
+  </span>
+  {{ with index $r 4 }}<li>Email: {{.}}</li>{{ end }}
+  {{ with index $r 5 }}<li>Phone: {{.}}</li>{{ end }}
+  {{ with index $r 6 }}<li><a href={{.}}>Google Scholar</a></li>{{ end }}
+  {{ with index $r 7 }}<li><a href={{.}}>UTS Webpage</a></li>{{ end }}
+  {{ with index $r 8 }}<li><a href={{.}}>Personal Website</a></li>{{ end }}
+  </p>
+  </div>
+  <hr/>
+  {{ end }}
+  {{ end -}}
+</div>
+{{- else -}}
+<span class="has-background-danger has-text-white">ERROR</span>
+{{- end -}}
+
