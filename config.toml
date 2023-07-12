@@ -1,6 +1,6 @@
 baseURL = 'https://hoangdinhresearchgroup.github.io'
 languageCode = 'en-us'
-title = 'Hoang Dinh Research Group'
+title = 'AI for Mobile Edge Networks'
 theme = ['mainroad', "hugo-shortcode-gallery"]
 
 [Params.logo]
