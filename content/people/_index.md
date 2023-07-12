@@ -6,7 +6,7 @@ menu:
     name: People
     weight: 2
 layout: single
-sidebar: true
+sidebar: false
 thumbnail: "people2.JPEG"
 ---
 

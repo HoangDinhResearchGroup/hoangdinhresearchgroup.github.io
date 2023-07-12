@@ -6,7 +6,7 @@ menu:
   main:
     name: Accomplishments
     weight: 7
-sidebar: true
+sidebar: false
 ---
 
 {{< accomplishments >}}

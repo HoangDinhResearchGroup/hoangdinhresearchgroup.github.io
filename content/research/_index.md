@@ -6,7 +6,7 @@ menu:
     name: Research
     weight: 3
 layout: single
-sidebar: true
+sidebar: false
 ---
 
 

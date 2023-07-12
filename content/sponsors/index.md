@@ -6,7 +6,7 @@ menu:
   main:
     name: Sponsors
     weight: 6
-sidebar: true
+sidebar: false
 ---
 
 {{< sponsors >}}
