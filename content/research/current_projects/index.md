@@ -4,5 +4,22 @@ date: 2023-03-16T23:15:27+11:00
 ---
 
 {{< rawhtml >}}
-<div class="mYVXT"><div class="LS81yb VICjCf j5pSsc db35Fc" tabindex="-1"><div class="hJDwNd-AhqUyc-uQSCkd Ft7HRd-AhqUyc-uQSCkd purZT-AhqUyc-II5mzb ZcASvf-AhqUyc-II5mzb pSzOP-AhqUyc-qWD73c Ktthjf-AhqUyc-qWD73c JNdkSc SQVYQc"><div class="JNdkSc-SmKAyb LkDMRd"><div class="" jscontroller="sGwD4d" jsaction="zXBUYb:zTPCnb;zQF9Uc:Qxe3nd;" jsname="F57UId"><div class="oKdM2c ZZyype Kzv0Me"><div id="h.4f103d4cf31dac86_209" class="hJDwNd-AhqUyc-uQSCkd Ft7HRd-AhqUyc-uQSCkd jXK9ad D2fZ2 zu5uec OjCsFc dmUFtb wHaque g5GTcb"><div class="jXK9ad-SmKAyb"><div class="tyJCtd mGzaTb Depvyb baZpAe"><ul class="n8H08c UVNKR " style="list-style-type: square; margin-left: 0; margin-right: 0; padding: 0;"><li dir="ltr" class="zfr3Q TYR86d eD0Rn " style="margin-left: 38.0pt;"><p dir="ltr" role="presentation" class="zfr3Q CDt4Ke " style="line-height: 1.38; margin-left: 0.0pt; padding-left: 0.0pt; text-indent: 0.0pt;"><span class="C9DxTc " style="color: #505050; font-family: Arial; font-size: 13.999999999999998pt; font-weight: 400; vertical-align: baseline;">Digital transformation for effective management of disaster responses and search-and-rescue, ($440,000 by DFAT, 2021-2022)</span></p></li><li dir="ltr" class="zfr3Q TYR86d eD0Rn " style="margin-left: 38.0pt;"><p dir="ltr" role="presentation" class="zfr3Q CDt4Ke " style="background-color: transparent; border-bottom: none; border-left: none; border-right: none; border-top: none; line-height: 1.38; margin-bottom: 0.0pt; margin-left: 0.0pt; margin-top: 0.0pt; padding-bottom: 0.0pt; padding-left: 0.0pt; padding-right: 0.0pt; padding-top: 0.0pt; text-indent: 0.0pt;"><span class="C9DxTc " style="color: #505050; font-family: Arial; font-size: 13.999999999999998pt; font-weight: 400; vertical-align: baseline;">Unleashing Opportunities in Vietnam Innovation Ecosystem for Australia’s Technology-based SMEs, ($200,000 by DFAT, 2021-2023)</span></p></li><li dir="ltr" class="zfr3Q TYR86d eD0Rn " style="margin-left: 38.0pt;"><p dir="ltr" role="presentation" class="zfr3Q CDt4Ke " style="background-color: transparent; border-bottom: none; border-left: none; border-right: none; border-top: none; line-height: 1.38; margin-bottom: 0.0pt; margin-left: 0.0pt; margin-top: 0.0pt; padding-bottom: 0.0pt; padding-left: 0.0pt; padding-right: 0.0pt; padding-top: 0.0pt; text-indent: 0.0pt;"><span class="C9DxTc " style="color: #505050; font-family: Arial; font-size: 13.999999999999998pt; font-weight: 400; vertical-align: baseline;">Horizon 2020 - Research and Innovation Framework Programme: Reliable Technologies and Models for Verified Wireless Body-Centric Transmission and Localization, (€1,002,800 by European Commission and others, 2018-2025)</span></p></li><li dir="ltr" class="zfr3Q TYR86d eD0Rn " style="margin-left: 38.0pt;"><p dir="ltr" role="presentation" class="zfr3Q CDt4Ke " style="background-color: transparent; border-bottom: none; border-left: none; border-right: none; border-top: none; line-height: 1.38; margin-bottom: 0.0pt; margin-left: 0.0pt; margin-top: 0.0pt; padding-bottom: 0.0pt; padding-left: 0.0pt; padding-right: 0.0pt; padding-top: 0.0pt; text-indent: 0.0pt;"><span class="C9DxTc " style="color: #505050; font-family: Arial; font-size: 13.999999999999998pt; font-weight: 400; vertical-align: baseline;">Developing integrated undersea acoustic communications and sensing prototype based on orthogonal time-frequency space (OTFS) signaling, (A$499,000 by NSW Defence Innovation Network, 2022-2023)</span></p></li></ul></div></div></div></div></div></div></div></div></div>
+<ul>
+  <li>
+    <strong>Intelligent Backscatter Communications for Green and Secure IoT Networks</strong>,
+    funded by Australian Research Council, (2021-2024). (AUD$414,000)
+  </li>
+  <li>
+    <strong>Study of 5G/6G Technology for Military Use</strong>,
+    funded by DSTG, 2023-2023 (AUD$284,676).
+  </li>
+  <li>
+    <strong>Unleashing Opportunities in Vietnam Innovation Ecosystem for Australia’s Technology-based SMEs</strong>,
+    funded by DFAT, 2021-2023, (AUD$200,000)
+  </li>
+  <li>
+    <strong>Research and Innovation Framework Programme: Reliable Technologies and Models for Verified Wireless Body-Centric Transmission and Localization</strong>,
+    funded by European Commission, UTS and partners, 2018-2025, (€$1,002,800)
+  </li>
+</ul>
 {{< /rawhtml >}}
