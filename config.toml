@@ -1,6 +1,6 @@
 baseURL = 'https://hoangdinhresearchgroup.github.io'
 languageCode = 'en-us'
-title = 'AI for Mobile Edge Networks'
+title = 'AI for Mobile Edge Networks (AI4MEN)'
 theme = ['mainroad', "hugo-shortcode-gallery"]
 
 [Params.logo]
