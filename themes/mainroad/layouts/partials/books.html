@@ -12,7 +12,7 @@
       {{ range $i, $r := getCSV "," $csv_filepath -}}
         {{ if ne $i 0 }}
           <tr class="even">
-            <td>
+            <td max-width="201">
               <a href="{{ index $r 0 }}"><img src="{{ index $r 4 | relURL }}" width="201" height="301" align="left"></a>
             </td>
             <td valign="top" style="padding-top: 40px !important;">
