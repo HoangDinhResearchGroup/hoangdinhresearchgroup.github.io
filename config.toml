@@ -4,7 +4,7 @@ title = 'AI for Mobile Edge Networks (AI4MEN)'
 theme = ['mainroad', "hugo-shortcode-gallery"]
 
 [Params.logo]
-  image = "img/image.png"
+  image = "img/logo-color.png"
 
 
 [Params]
