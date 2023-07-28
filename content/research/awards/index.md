@@ -6,7 +6,7 @@ date: 2023-03-16T23:15:45+11:00
 {{< rawhtml >}}
 <ul>
   <li>
-    <strong>IEEE Communications Society Best Survey Paper Award 2023</strong>
+    IEEE Communications Society Best Survey Paper Award 2023
   </li>
   <li>
     <strong>Dr. Hoang Dinh was listed as one of the Best Scientists in the field of Computer Science and ranked  #219 in Australia and #7541 in the world, 2023</strong>
