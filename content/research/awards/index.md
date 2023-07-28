@@ -3,6 +3,7 @@ title: "Awards ABC"
 date: 2023-03-16T23:15:45+11:00
 ---
 
+{{< rawhtml >}}
 <ul>
   <li>
     <strong>IEEE Communications Society Best Survey Paper Award 2023</strong>
@@ -38,3 +39,4 @@ date: 2023-03-16T23:15:45+11:00
     <strong>Dr. Hoang Dinh received the Exemplary Reviewer, IEEE Transactions on Wireless Communications 2018.</strong>
   </li>
 </ul>
+{{< /rawhtml >}}
